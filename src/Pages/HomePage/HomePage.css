@@ -1,0 +1,297 @@
+.carousel {
+  position: relative;
+  width: 900%;
+  max-width: 1200px; /* Ajusta o tamanho do carrossel */
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Define a largura para que apenas uma imagem apareça */
+}
+
+.carousel-item {
+  min-width: 100%; /* Cada item ocupa a largura total do carrossel */
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+}
+
+.carousel-button {
+  position: absolute;
+  left: 47px;
+  top: 75%;
+  transform: translateY(-50%);
+  background-color: #C92071;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+  background-color: #a8185d;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  background-color: #CCCCCC;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: #C92071;
+}
+
+/* Collections Section */
+.collections-section {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.collections-title {
+  color: #474747ea;
+  
+  margin-bottom: 20px;
+  margin-left: 60px; /* Espaço à esquerda */
+  margin-top: 50px;
+}
+
+.collections-cards {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.collection-card {
+  position: relative;
+  width: 30%;
+  max-width: 300px;
+}
+
+.collection-image {
+  width: 100%;
+}
+
+.collection-button {
+  position: absolute;
+  bottom: 15%;
+  left: 20px;
+  background-color: #ffffff;
+  color: #c92072de;
+  border: none;
+  padding: 8px 20px;
+  font-size: 0.8rem;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.collection-button:hover {
+  background-color: #c4bec0;
+}
+
+/* Centraliza o contêiner dos produtos */
+.collections-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.Product-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre os produtos */
+}
+
+.Product-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Define tamanhos para imagens */
+.Product-image {
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+.Product-title{
+  margin-top: 50px;
+  color:#474747ea;
+  margin-bottom: 20px;
+}
+
+.Product-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.Product-label {
+  font-size: 16px; /* Ajuste o tamanho conforme necessário */
+  margin-top: 8px; /* Espaçamento acima do texto */
+  color:#474747;
+  position: relative; /* Para posicionamento adequado */
+  z-index: 1; /* Para garantir que o texto fique acima de outros elementos */
+  background-color: rgba(255, 255, 255, 0.842); /* Fundo branco para destaque */
+  padding: 4px 8px; /* Padding para um melhor espaçamento */
+  border-radius: 4px; /* Borda arredondada */
+}
+
+
+
+
+
+.highlighted-products-section {
+  margin-top: 40px;
+}
+
+.highlighted-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.highlighted-title {
+  font-size: 24px;
+  color: #474747c3;
+  margin-left: 90px;
+}
+
+.view-more-button {
+  font-size: 16px;
+  color: #C92071;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.view-more-button::after {
+  content: '→';
+  font-size: 22px; /* Aumenta o tamanho da seta */
+  margin-left: 5px; /* Adiciona espaço entre o texto e a seta */
+}
+
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.product-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.discount-image {
+  width: 250%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+.offer-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.offer-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.offer-button {
+  position: absolute;
+  background-color: #C92071; /* Cor de fundo rosa */
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transform: translate(39px, 140px);
+}
+
+.offer-button:hover {
+  background-color: #f02494c9; /* Cor rosa mais clara ao passar o mouse */
+}
+
+
+
+
+
+/* Estilo específico para a HomePage */
+
+/* Escondendo as imagens adicionais */
+.home-page .list-product .card-product:nth-child(n+9) {
+  display: none; /* Esconde a partir da 5ª imagem */
+}
+
+/* Configuração da lista de produtos (imagens) */
+.home-page .list-product {
+  display: grid; /* Organiza os itens em grid */
+  grid-template-columns: repeat(4, 1fr); /* Exibe até 4 produtos por linha */
+  gap: 10px; /* Espaçamento entre os itens */
+  padding: 0 10px; /* Espaçamento interno */
+  margin-bottom: 20px; /* Espaço abaixo da lista */
+}
+
+/* Cartão do produto (Imagem) */
+.home-page .card-product {
+  display: inline-block;
+  text-align: center;
+  overflow: hidden; /* Garante que as imagens não ultrapassem os limites do card */
+}
+
+/* Imagem do produto (sapato) */
+.home-page .image-discount {
+  width: 100%; /* Ajusta a imagem para ocupar toda a largura disponível */
+  height: 300px; /* Altura fixa para as imagens */
+  object-fit: contain; /* Garante que a imagem não será cortada */
+  display: block; /* Remove qualquer espaçamento extra ao redor da imagem */
+}
+
+
+
+

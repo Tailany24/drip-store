@@ -1,0 +1,50 @@
+/* src/components/Navbar.css */
+nav {
+  background-color: #FFFFFF;
+  margin: 20px 0; /* Adiciona 20px de espaço acima e abaixo da navbar */
+  padding: 0 100px; /* Adiciona 20px de espaço nas laterais */
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* Espaçamento entre os itens */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  color: #474747c5;
+  font-family: "Roboto", initial;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 18px; /* Aumente o tamanho do texto se quiser */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Efeito neon ao passar o mouse */
+nav a:hover {
+  color: #FF1493;
+  font-style: normal;
+}
+/* Estilos para o link "Home" quando estiver ativo */
+nav a.active {
+  color: #FF1493; /* Rosa neon chamativo */
+  text-decoration: underline; /* Adiciona underline */
+  text-decoration-color: #FF1493; /* Cor verde neon para o underline */
+  text-underline-offset: 5px; /* Aumenta a distância do underline em relação ao texto */
+  text-decoration-thickness: 2px; /* Define a espessura do underline */
+  font-weight: bold;
+}
+
+
+/* Ocultar navbar em dispositivos móveis */
+@media (max-width: 768px) {
+  nav {
+    display: none; /* Oculta a navbar */
+  }
+}

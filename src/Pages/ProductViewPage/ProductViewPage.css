@@ -1,0 +1,131 @@
+.additional-message {
+  font-size: 1.2rem; 
+  color: #333; /* Cor do texto */
+  margin-top: 15px; /* Espaçamento superior */
+  text-align: center; /* Centraliza a frase */
+}
+
+.high-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.high-title{
+  font-size: 24px;
+  color: #474747c3;
+  margin-left: 90px;
+}
+
+.view-more{
+  font-size: 16px;
+  color: #C92071;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.view-more::after{
+  content: '→';
+  font-size: 22px; /* Aumenta o tamanho da seta */
+  margin-left: 5px; /* Adiciona espaço entre o texto e a seta */
+}
+
+
+
+
+
+
+
+
+/* Estilo para o contêiner principal da página de visualização do produto */
+.product-view-container {
+  padding: 20px;
+  background-color: #f9f9f9; /* Cor de fundo clara */
+}
+
+/* Estilo para a seção "Produtos Relacionados" */
+
+/* Fundo transparente para a seção "Produtos Relacionados" */
+.product-view-container .high-header {
+  background-color: transparent; /* Fundo transparente */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Cor do título "Produtos Relacionados" */
+.product-view-container .high-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #474747; /* Cor do título */
+  margin-left: 18px;
+}
+
+/* Estilo do botão "Ver todos" */
+.product-view-container .view-more {
+  font-size: 14px;
+  font-weight: normal;
+  color: #C92071;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+
+.product-view-container .view-more:hover {
+  color: #C92071;
+  text-decoration: underline;
+}
+
+/* Estilo da seção "Produtos Relacionados" (contêiner da seção) */
+.product-view-container .high-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilo da lista de produtos (product list) */
+.product-view-container .list-product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 imagens por linha */
+  gap: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Estilo do cartão de cada produto */
+.product-view-container .card-product {
+  display: inline-block;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse sobre o cartão */
+.product-view-container .card-product:hover {
+  transform: translateY(-5px); /* Eleva o cartão para um efeito de "hover" */
+}
+
+/* Estilo da imagem do produto */
+.product-view-container .image-discount {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Esconde as imagens adicionais (a partir da 5ª imagem) */
+.product-view-container .list-product .card-product:nth-child(n+5) {
+  display: none; /* Esconde a partir da 5ª imagem */
+}

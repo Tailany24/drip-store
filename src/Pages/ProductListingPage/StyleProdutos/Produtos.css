@@ -1,0 +1,199 @@
+.product-listing-page {
+  margin: 70px 0 20px; /* Aumenta a margem superior */
+}
+
+.header {
+  margin-bottom: 20px;
+  display: flex; /* Adiciona flex ao header */
+  justify-content: space-between; /* Alinha os elementos nas extremidades */
+  align-items: center; /* Alinha verticalmente */
+}
+
+.header h2 {
+  font-size: 15px; /* Diminui o tamanho da fonte */
+  color: #474747; /* Muda a cor do texto */
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between; /* Mantém os elementos separados */
+  align-items: center;
+  width: 100%; /* Garante que ocupe toda a largura */
+}
+
+.title-and-info {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+}
+
+.product-info {
+  margin-left: 10px; /* Espaço entre título e "389 produtos" */
+  font-size: 14px;
+  color: #474747;
+}
+
+.sort-container {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 20px; /* Ajusta o espaçamento interno */
+  margin-left: auto; /* Faz o contêiner de ordenação ocupar o espaço restante à esquerda */
+}
+
+.sort-label {
+  display: flex;
+  align-items: center;
+  color: #4747477a;
+  font-weight: bold;
+  gap: 10px; /* Espaço entre o texto "Ordenar por:" e o dropdown */
+}
+
+.sort-dropdown {
+  border: none;
+  font-size: 16px;
+  color: #474747;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Estilo para a seção de filtro */
+.filter-section {
+  padding-left: 100px; /* Afastamento da seção de filtro para a direita */
+  width: 270px;
+}
+
+/* Título do filtro com underline */
+.filter-section h3 {
+  position: relative;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #474747;
+  margin-top: 60px;
+}
+
+.filter-section h3::after {
+  content: '';
+  display: block;
+  width: 100%; /* Largura da linha */
+  height: 2px; /* Espessura da linha */
+  background-color: #47474749; /* Cor da linha */
+  margin-top: 20px;
+}
+
+/* Títulos das categorias de filtro */
+.filter-category h4 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #474747;
+}
+
+/* Estilo da lista e dos itens de filtro */
+.filter-category ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.filter-category li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* Ajuste de alinhamento para texto de filtro */
+.filter-category label {
+  font-size: 14px;
+  color: #474747;
+}
+
+/* Estilo para checkboxes na seção Marca, Categoria e Gênero */
+.filter-category input[type="checkbox"] {
+  position: relative;              /* Permite que o ícone de verificação seja posicionado em relação ao checkbox */
+  width: 20px;                     /* Largura do checkbox */
+  height: 20px;                    /* Altura do checkbox */
+  margin-right: 8px;               /* Espaçamento à direita */
+  cursor: pointer;                 /* Cursor em forma de ponteiro ao passar o mouse */
+  appearance: none;                /* Remove o estilo padrão do checkbox */
+  background-color: #ffffff;       /* Fundo branco inicialmente */
+  border: 2px solid #47474757;       /* Borda rosa */
+}
+
+/* Adicionando o ícone de verificação quando marcado */
+.filter-category input[type="checkbox"]:checked {
+  background-color: #C92071;       /* Fundo rosa ao clicar */
+  border-color: #47474757;           /* Mantém a borda rosa */
+}
+
+/* Estilo para o ícone de verificação na seção Marca, Categoria e Gênero */
+.filter-category input[type="checkbox"]:checked::before {
+  content: '✔';                    /* Ícone de verificação */
+  position: absolute;
+  left: 4px;                       /* Ajuste a posição do ícone conforme necessário */
+  top: 0;                          /* Ajuste a posição do ícone conforme necessário */
+  color: #ffffff;                  /* Cor do ícone de verificação */
+}
+
+/* Estilo para checkboxes na seção Estado */
+.estado-category input[type="checkbox"] {
+  appearance: none;                /* Remove o estilo padrão do checkbox */
+  width: 15px;                     /* Largura do checkbox */
+  height: 15px;                    /* Altura do checkbox */
+  background-color: #ffffff;       /* Fundo branco */
+  border: 2px solid #47474757;       /* Borda rosa */
+  display: inline-block;           /* Exibe o checkbox inline */
+  margin-right: 8px;               /* Espaçamento à direita */
+  border-radius: 50%;              /* Forma arredondada */
+  cursor: pointer;                 /* Cursor em forma de ponteiro ao passar o mouse */
+}
+
+/* Estilo para checkboxes marcados na seção Estado */
+.estado-category input[type="checkbox"]:checked {
+  background-color: #C92071;       /* Fundo rosa ao clicar */
+  border-color: #47474757;           /* Mantém a borda rosa */
+}
+
+/* Remover qualquer ícone de verificação na seção Estado */
+.estado-category input[type="checkbox"]:checked::before {
+  content: '';                      /* Remove o conteúdo do ícone */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content {
+  display: flex;                /* Permite que o filtro e os produtos fiquem lado a lado */
+  margin-top: 20px;           /* Espaço acima do conteúdo */
+}
+
+.list-product {
+  display: grid;               /* Define um layout de grid para os produtos */
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 10px;                   /* Espaçamento entre as imagens */
+  margin-left: 20px;           /* Espaçamento à esquerda para afastar do filtro */
+  flex-grow: 1;                /* Faz com que a lista de produtos ocupe o espaço restante */
+  margin-bottom: 100px; /* Espaço abaixo da lista de produtos */
+}
+
+.image-discount {
+  width: 100%;                 /* Imagens ocupam toda a largura do card */
+  height: auto;                /* Mantém a proporção */
+  border-radius: 5px;         /* Arredonda os cantos */
+}
+
+/* Para as 4 fileiras de 3 imagens */
+.list-product .product-card {
+  flex-basis: calc(33.333% - 10px); /* Largura de cada card para 3 por linha */
+}
