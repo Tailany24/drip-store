@@ -2,6 +2,8 @@
 
 Drip-Store é uma aplicação de e-commerce desenvolvida para oferecer uma experiência moderna e intuitiva aos usuários. Este projeto visa facilitar a compra de produtos online com uma interface responsiva e funcionalidades práticas.
 
+[![drip-store](https://github.com/user-attachments/assets/a78dbd32-90fe-44f8-add2-72e0e6fd0637)](https://drip-store-nine.vercel.app/)
+
 ## Tecnologias Utilizadas
 
 - **Linguagem de Programação:** TypeScript
