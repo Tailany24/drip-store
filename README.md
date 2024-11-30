@@ -11,7 +11,7 @@ Drip-Store é uma aplicação de e-commerce desenvolvida para oferecer uma exper
 
 ## Desenvolvedor
 
-Este projeto foi desenvolvido por uma única pessoa:
+Este projeto foi desenvolvido por Tailany
 - **Função:** Desenvolvedora Full Stack
 
 ## Propósito do Projeto
